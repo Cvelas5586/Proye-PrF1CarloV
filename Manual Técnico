@@ -1,0 +1,58 @@
+# Manual Técnico - Programa de Figuras Geométricas
+
+---
+
+## Descripción General
+
+El programa de Figuras Geométricas es una aplicación de consola desarrollada en C++ que permite dibujar y manipular figuras geométricas básicas como círculos, cuadrados, triángulos y rectángulos. El programa utiliza la biblioteca Windows.h para la manipulación de la consola y ofrece funcionalidades simples como dibujar, mover y salir del programa.
+
+## Requisitos del Sistema
+
+- **Sistema operativo:** Windows
+- **Compilador:** Compatible con C++11 o superior
+- **Herramientas:** Visual Studio Code u otro editor de código compatible
+
+## Instalación y Compilación
+
+1. Descargue los archivos del programa desde el repositorio.
+2. Abra Visual Studio Code y abra la carpeta que contiene los archivos del programa.
+3. Compile el programa utilizando un compilador de C++ compatible con Visual Studio Code.
+4. Ejecute el programa compilado desde la terminal de Visual Studio Code o desde el explorador de archivos.
+
+## Estructura del Código
+
+El código del programa está organizado de la siguiente manera:
+
+- **main.cpp:** Contiene la función principal `main` y las funciones principales del programa.
+- **Funciones.cpp:** Contiene las definiciones de las funciones relacionadas con el dibujo y movimiento de figuras.
+- **Funciones.h:** Contiene los prototipos de las funciones utilizadas en el programa.
+
+## Funciones Principales
+
+- `Menu_FigurasGeometricas()`: Presenta el menú de opciones y maneja la selección de figuras.
+- `dibujarCirculo(int radius)`: Dibuja un círculo en la posición central y permite moverlo.
+- `dibujarCuadrado(int tamanio)`: Dibuja un cuadrado en la posición central y permite moverlo.
+- `dibujarTriangulo(int size)`: Dibuja un triángulo en la posición central y permite moverlo.
+- `dibujarRectangulo(int ancho, int alto)`: Dibuja un rectángulo en la posición central y permite moverlo.
+- `moverFigura(int figuraPosX, int figuraPosY, int figuraAncho, int figuraAlto, char tecla)`: Permite mover una figura dibujada en la consola.
+
+## Consideraciones de Diseño
+
+- El programa utiliza la función `GetAsyncKeyState` para detectar la tecla F12 y comenzar la ejecución.
+- Las figuras se dibujan utilizando caracteres "*" en la consola, con la posición central como referencia.
+- Se implementa un sistema de movimiento de figuras utilizando las teclas WASD para arriba, izquierda, abajo y derecha, respectivamente.
+
+## Bibliotecas Utilizadas
+
+- `<iostream>`: Para entrada/salida estándar.
+- `<windows.h>`: Para manipulación de la consola y detección de teclas.
+- `<cmath>`: Para operaciones matemáticas.
+- `<conio.h>`: Para funciones de consola como `_kbhit` y `_getch`.
+
+## Posibles Mejoras y Optimizaciones
+
+- Mejorar la detección de colisiones al mover las figuras.
+- Implementar una interfaz gráfica más avanzada utilizando una biblioteca gráfica.
+- Agregar más figuras geométricas y funcionalidades avanzadas como rotación y escalado.
+
+---
